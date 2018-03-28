@@ -35,6 +35,14 @@ module.exports = {
       }
     }
   },
+  /*
+  ** Connection settings for web api
+  */
+  env: {
+    webApiUrl: process.env.RASCALOID_URL || 'http://localhost',
+    webApiPort: process.env.RASCALOID_PORT || '3000',
+    enableBouncr: process.env.RASCALOID_ENABLE_BOUNCR || true,
+  },
 
   plugins: ['~/plugins/router']
 }
